@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { label: "Accueil", path: "/" },
+  { label: "Home", path: "/" },
   { label: "Sciences", path: "/sciences" },
-  { label: "Architectes", path: "/architectes" },
-  { label: "Livres", path: "/livres" },
+  { label: "Architects", path: "/architectes" },
+  { label: "Books", path: "/livres" },
   { label: "Culture", path: "/culture" },
 ];
 
@@ -50,9 +50,9 @@ export const Header = () => {
             </div>
             <div className="hidden sm:block">
               <h1 className="font-serif text-lg font-semibold text-foreground leading-tight">
-                Architecture Chinoise
+                Chinese Architecture
               </h1>
-              <p className="text-xs text-muted-foreground">Ancienne</p>
+              <p className="text-xs text-muted-foreground">Ancient</p>
             </div>
           </Link>
 
