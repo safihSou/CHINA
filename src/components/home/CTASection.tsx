@@ -40,9 +40,9 @@ export const CTASection = () => {
             transition={{ delay: 0.1 }}
             className="font-serif text-3xl md:text-4xl font-semibold text-primary-foreground mb-6"
           >
-            Prêt à Explorer l'Architecture
+            Ready to Explore the Architecture
             <br />
-            de l'Empire du Milieu ?
+            of the Middle Kingdom?
           </motion.h2>
 
           <motion.p
@@ -52,9 +52,9 @@ export const CTASection = () => {
             transition={{ delay: 0.2 }}
             className="text-primary-foreground/80 mb-10 leading-relaxed"
           >
-            Plongez dans un voyage à travers les dynasties, découvrez les secrets
-            des maîtres bâtisseurs et admirez les chefs-d'œuvre qui ont traversé
-            les millénaires.
+            Dive into a journey through the dynasties, discover the secrets of
+            master builders, and admire the masterpieces that have endured for
+            millennia.
           </motion.p>
 
           <motion.div
@@ -70,7 +70,7 @@ export const CTASection = () => {
               className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-base font-medium group"
             >
               <Link to="/sciences">
-                Commencer l'Aventure
+                Start the Adventure
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
@@ -80,7 +80,7 @@ export const CTASection = () => {
               size="lg"
               className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 px-8 py-6 text-base"
             >
-              <Link to="/architectes">Rencontrer les Maîtres</Link>
+              <Link to="/architectes">Meet the Masters</Link>
             </Button>
           </motion.div>
         </div>
