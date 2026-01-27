@@ -5,39 +5,39 @@ import chinaMap from "@/assets/china-map.jpg";
 
 const sites = [
   {
-    name: "Grande Muraille",
-    location: "Nord de la Chine",
-    description: "Plus de 20 000 km de fortifications",
+    name: "Great Wall",
+    location: "Northern China",
+    description: "Over 20,000 km of fortifications",
     coords: { top: "25%", left: "55%" },
   },
   {
-    name: "Cité Interdite",
+    name: "Forbidden City",
     location: "Beijing",
-    description: "980 bâtiments, 8 704 pièces",
+    description: "980 buildings, 8,704 rooms",
     coords: { top: "30%", left: "60%" },
   },
   {
-    name: "Temple du Ciel",
+    name: "Temple of Heaven",
     location: "Beijing",
-    description: "Chef-d'œuvre de symbolisme cosmologique",
+    description: "Masterpiece of cosmological symbolism",
     coords: { top: "32%", left: "62%" },
   },
   {
-    name: "Armée de Terre Cuite",
+    name: "Terracotta Army",
     location: "Xi'an",
-    description: "8 000 soldats gardant l'empereur Qin",
+    description: "8,000 soldiers guarding Emperor Qin",
     coords: { top: "45%", left: "48%" },
   },
   {
-    name: "Jardins de Suzhou",
+    name: "Suzhou Gardens",
     location: "Suzhou",
-    description: "L'art du jardin classique chinois",
+    description: "The art of classical Chinese gardens",
     coords: { top: "50%", left: "65%" },
   },
   {
-    name: "Temples de Wudang",
+    name: "Wudang Temples",
     location: "Hubei",
-    description: "Architecture taoïste dans les montagnes",
+    description: "Taoist architecture in the mountains",
     coords: { top: "55%", left: "52%" },
   },
 ];
@@ -48,8 +48,8 @@ export const MapSection = () => {
       <div className="container mx-auto px-4">
         <SectionTitle
           chineseTitle="地圖"
-          title="Sites Architecturaux Majeurs"
-          subtitle="Explorez la géographie des plus grandes réalisations architecturales de la Chine ancienne."
+          title="Major Architectural Sites"
+          subtitle="Explore the geography of ancient China's greatest architectural achievements."
         />
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -63,7 +63,7 @@ export const MapSection = () => {
           >
             <img
               src={chinaMap}
-              alt="Carte des sites architecturaux de la Chine ancienne"
+              alt="Map of ancient Chinese architectural sites"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/30 to-transparent" />
