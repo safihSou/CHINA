@@ -167,7 +167,7 @@ const SciencesPage = () => {
           <div className="container mx-auto px-4">
             <SectionTitle
               chineseTitle="模型"
-              title="Interactive 3D Model",
+              title="Interactive 3D Model"
               subtitle="Explore the Dougong bracket system in three dimensions."
             />
 
