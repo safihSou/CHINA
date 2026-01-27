@@ -9,56 +9,56 @@ const architects = [
   {
     name: "Li Jie",
     chineseName: "李誡",
-    period: "1065 - 1110",
-    dynasty: "Song du Nord",
-    role: "Superviseur des Constructions Impériales",
+    period: "1065 – 1110",
+    dynasty: "Northern Song",
+    role: "Imperial Construction Supervisor",
     achievement: "Yingzao Fashi (營造法式)",
     description:
-      "Li Jie est l'auteur du traité architectural le plus influent de l'histoire chinoise. Son ouvrage codifie les techniques de construction et établit des standards qui perdureront pendant des siècles.",
+      "Li Jie authored the most influential architectural treatise in Chinese history. His work codified construction techniques and established standards that endured for centuries.",
     contributions: [
-      "Rédaction du Yingzao Fashi",
-      "Standardisation du système modulaire cai-fen",
-      "Documentation des techniques Dougong",
-      "Classification des bâtiments en 8 grades",
+      "Authoring the Yingzao Fashi",
+      "Standardizing the modular cai-fen system",
+      "Documenting Dougong techniques",
+      "Classifying buildings into 8 grades",
     ],
     quote:
-      "La construction doit suivre les principes du ciel et de la terre, alliant solidité et harmonie.",
+      "Construction must follow the principles of heaven and earth, combining strength and harmony.",
   },
   {
     name: "Lei Fada",
     chineseName: "雷發達",
-    period: "1619 - 1693",
+    period: "1619 – 1693",
     dynasty: "Qing",
-    role: "Maître Charpentier Impérial",
-    achievement: "Fondateur de la dynastie Lei",
+    role: "Imperial Master Carpenter",
+    achievement: "Founder of the Lei Dynasty",
     description:
-      "Patriarche d'une dynastie de maîtres charpentiers qui servira la cour impériale pendant plus de 200 ans. Les Lei ont conçu les plus grands projets architecturaux des Qing.",
+      "Patriarch of a dynasty of master carpenters who served the imperial court for over 200 years. The Lei family designed the Qing dynasty’s greatest architectural projects.",
     contributions: [
-      "Conception de la Cité Interdite restaurée",
-      "Création des 'Lei drawings' (样式雷)",
-      "Palais d'Été et jardins impériaux",
-      "Formation de sept générations d'architectes",
+      "Design of the restored Forbidden City",
+      "Creation of the 'Lei drawings' (Yangshi Lei)",
+      "Summer Palace and imperial gardens",
+      "Training seven generations of architects",
     ],
     quote:
-      "Chaque poutre porte le poids de l'empire, chaque tuile reflète la gloire du ciel.",
+      "Every beam carries the weight of the empire; every tile reflects the glory of heaven.",
   },
   {
     name: "Kuai Xiang",
     chineseName: "蒯祥",
-    period: "1398 - 1481",
+    period: "1398 – 1481",
     dynasty: "Ming",
-    role: "Architecte en Chef Impérial",
-    achievement: "Constructeur de la Cité Interdite",
+    role: "Chief Imperial Architect",
+    achievement: "Builder of the Forbidden City",
     description:
-      "Surnommé le 'Lu Ban de la dynastie Ming', Kuai Xiang a dirigé la construction de la Cité Interdite et de nombreux bâtiments impériaux majeurs à Beijing.",
+      "Nicknamed the 'Lu Ban of the Ming dynasty,' Kuai Xiang oversaw the construction of the Forbidden City and numerous major imperial buildings in Beijing.",
     contributions: [
-      "Construction de la Cité Interdite",
-      "Palais de la Suprême Harmonie",
-      "Porte Chengtian (Tiananmen)",
-      "Innovations dans le système Dougong Ming",
+      "Construction of the Forbidden City",
+      "Hall of Supreme Harmony",
+      "Chengtian Gate (Tiananmen)",
+      "Innovations in the Ming Dougong system",
     ],
     quote:
-      "L'architecture impériale est le miroir de la vertu du souverain sur terre.",
+      "Imperial architecture is the earthly mirror of the sovereign’s virtue.",
   },
 ];
 
@@ -81,14 +81,12 @@ const ArchitectesPage = () => {
                 建築師
               </span>
               <h1 className="font-serif text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
-                Les Grands Architectes
+                Great Architects
                 <br />
-                <span className="text-accent">de la Chine Ancienne</span>
+                <span className="text-accent">of Ancient China</span>
               </h1>
               <p className="text-lg text-primary-foreground/80 leading-relaxed">
-                Rencontrez les maîtres bâtisseurs qui ont élevé l'architecture
-                au rang d'art impérial. Leurs œuvres continuent d'inspirer et
-                d'émerveiller le monde entier.
+                Meet the master builders who elevated architecture to an imperial art. Their works continue to inspire and amaze the world.
               </p>
             </motion.div>
           </div>
@@ -99,8 +97,8 @@ const ArchitectesPage = () => {
           <div className="container mx-auto px-4">
             <SectionTitle
               chineseTitle="大師"
-              title="Maîtres Bâtisseurs"
-              subtitle="Les visionnaires qui ont façonné le paysage architectural de l'Empire du Milieu."
+              title="Master Builders"
+              subtitle="The visionaries who shaped the architectural landscape of the Middle Kingdom."
             />
 
             <div className="space-y-16">
@@ -122,7 +120,7 @@ const ArchitectesPage = () => {
                     <div className="aspect-[3/4] bg-muted rounded-sm overflow-hidden relative chinese-frame">
                       <img
                         src={architectPortrait}
-                        alt={`Portrait de ${architect.name}`}
+                        alt={`Portrait of ${architect.name}`}
                         className="w-full h-full object-cover"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-secondary/60 via-transparent to-transparent" />
@@ -150,7 +148,7 @@ const ArchitectesPage = () => {
                         </span>
                         <span className="flex items-center gap-2 text-muted-foreground">
                           <MapPin className="w-4 h-4 text-primary" />
-                          Dynastie {architect.dynasty}
+                          {architect.dynasty} Dynasty
                         </span>
                         <span className="flex items-center gap-2 text-muted-foreground">
                           <Award className="w-4 h-4 text-accent" />
@@ -166,7 +164,7 @@ const ArchitectesPage = () => {
                     <div className="mb-6">
                       <h4 className="font-serif font-semibold text-foreground mb-3 flex items-center gap-2">
                         <BookOpen className="w-4 h-4 text-primary" />
-                        Contributions Majeures
+                        Major Contributions
                       </h4>
                       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                         {architect.contributions.map((contribution) => (
