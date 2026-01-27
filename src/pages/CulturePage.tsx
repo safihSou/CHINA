@@ -19,38 +19,38 @@ const philosophies = [
     title: "Feng Shui",
     chineseTitle: "風水",
     description:
-      "L'art ancestral de l'harmonisation de l'énergie (Qi) entre l'homme et son environnement. Chaque bâtiment est orienté pour optimiser la circulation des énergies bénéfiques.",
+      "The ancient art of harmonizing energy (Qi) between humans and their environment. Every building is oriented to optimize the flow of beneficial energies.",
     principles: [
-      "Orientation sud pour capter le Yang",
-      "Montagnes protectrices au nord",
-      "Eau au sud pour la prospérité",
-      "Équilibre des cinq éléments",
+      "South-facing orientation to capture Yang energy",
+      "Protective mountains to the north",
+      "Water to the south for prosperity",
+      "Balance of the Five Elements",
     ],
   },
   {
     icon: Sun,
-    title: "Yin et Yang",
+    title: "Yin and Yang",
     chineseTitle: "陰陽",
     description:
-      "Le principe de dualité complémentaire se retrouve dans chaque aspect de l'architecture chinoise, des proportions aux matériaux, en passant par l'orientation.",
+      "The principle of complementary duality appears in every aspect of Chinese architecture—from proportions and materials to orientation.",
     principles: [
-      "Façades sud (Yang) vs nord (Yin)",
-      "Bois (Yang) et pierre (Yin)",
-      "Espaces ouverts et fermés",
-      "Lumière et ombre",
+      "South façades (Yang) vs. north (Yin)",
+      "Wood (Yang) and stone (Yin)",
+      "Open and enclosed spaces",
+      "Light and shadow",
     ],
   },
   {
     icon: Mountain,
-    title: "Harmonie avec la Nature",
+    title: "Harmony with Nature",
     chineseTitle: "天人合一",
     description:
-      "Le concept de 'Tianren Heyi' (union du ciel et de l'homme) guide l'intégration des bâtiments dans leur environnement naturel.",
+      "The concept of 'Tianren Heyi' (Unity of Heaven and Humanity) guides the integration of buildings into their natural surroundings.",
     principles: [
-      "Intégration au paysage",
-      "Respect des courbes naturelles",
-      "Jardins comme microcosmes",
-      "Matériaux locaux",
+      "Integration with the landscape",
+      "Respect for natural contours",
+      "Gardens as microcosms",
+      "Use of local materials",
     ],
   },
 ];
@@ -60,82 +60,82 @@ const symbols = [
     icon: Crown,
     name: "Dragon",
     chineseName: "龍",
-    meaning: "Pouvoir impérial, force et protection. Réservé à l'empereur.",
-    usage: "Toits impériaux, colonnes du palais, tuiles décoratives",
+    meaning: "Imperial power, strength, and protection. Reserved exclusively for the emperor.",
+    usage: "Imperial roofs, palace columns, decorative tiles",
   },
   {
     icon: Leaf,
-    name: "Phénix",
+    name: "Phoenix",
     chineseName: "鳳凰",
-    meaning: "Impératrice, renouveau et prospérité. Symbole féminin par excellence.",
-    usage: "Quartiers de l'impératrice, décorations de mariage",
+    meaning: "Empress, renewal, and prosperity. The ultimate feminine symbol.",
+    usage: "Empress’s quarters, wedding decorations",
   },
   {
     icon: Home,
-    name: "Toit Courbé",
+    name: "Curved Roof",
     chineseName: "飛簷",
     meaning:
-      "Les toits relevés symbolisent l'élévation spirituelle et protègent des mauvais esprits.",
-    usage: "Temples, palais, pavillons de jardin",
+      "Upturned eaves symbolize spiritual elevation and ward off evil spirits.",
+    usage: "Temples, palaces, garden pavilions",
   },
   {
     icon: Droplets,
-    name: "Eau",
+    name: "Water",
     chineseName: "水",
-    meaning: "Richesse, purification et flux de l'énergie vitale.",
-    usage: "Douves, fontaines, étangs de lotus",
+    meaning: "Wealth, purification, and the flow of vital energy.",
+    usage: "Moats, fountains, lotus ponds",
   },
   {
     icon: Moon,
-    name: "Lune",
+    name: "Moon",
     chineseName: "月",
-    meaning: "Féminité, cycles naturels et sagesse contemplative.",
-    usage: "Portes lunaires, pavillons de méditation",
+    meaning: "Femininity, natural cycles, and contemplative wisdom.",
+    usage: "Moon gates, meditation pavilions",
   },
   {
     icon: Sun,
-    name: "Soleil",
+    name: "Sun",
     chineseName: "日",
-    meaning: "Masculinité, pouvoir et énergie vitale Yang.",
-    usage: "Orientation des palais, décorations impériales",
+    meaning: "Masculinity, authority, and Yang vital energy.",
+    usage: "Palace orientation, imperial decorations",
   },
 ];
 
 const colors = [
   {
-    name: "Jaune Impérial",
+    name: "Imperial Yellow",
     chineseName: "皇黃",
     hex: "#FFD700",
-    meaning: "Couleur exclusive de l'empereur, symbole du centre et de la terre.",
-    usage: "Toits de la Cité Interdite, vêtements impériaux",
+    meaning: "Exclusive color of the emperor, symbolizing the center and the earth.",
+    usage: "Roofs of the Forbidden City, imperial robes",
   },
   {
-    name: "Rouge Vermillon",
+    name: "Vermilion Red",
     chineseName: "朱紅",
     hex: "#C41E3A",
-    meaning: "Bonheur, bonne fortune et protection contre le mal.",
-    usage: "Murs, portes, colonnes des temples et palais",
+    meaning: "Happiness, good fortune, and protection against evil.",
+    usage: "Walls, doors, temple and palace columns",
   },
   {
-    name: "Bleu/Vert",
+    name: "Blue/Green",
     chineseName: "青",
-    meaning: "Immortalité, printemps et croissance. Couleur du ciel.",
+    meaning: "Immortality, spring, and growth. Color of the heavens.",
     hex: "#1A365D",
-    usage: "Toits du Temple du Ciel, décorations de céladon",
+    usage: "Roofs of the Temple of Heaven, celadon decorations",
   },
   {
-    name: "Noir",
+    name: "Black",
     chineseName: "黑",
     hex: "#1a1a2e",
-    meaning: "Eau, nord, sagesse et mystère.",
-    usage: "Toits des bibliothèques (protection contre le feu)",
+    meaning: "Water, north, wisdom, and mystery.",
+    usage: "Roofs of libraries (protection against fire)",
   },
   {
-    name: "Blanc",
+    name: "White",
     chineseName: "白",
     hex: "#FFFEF5",
-    meaning: "Pureté, deuil et métal dans les cinq éléments.",
-    usage: "Murs d'enceinte, balustrades en marbre",
+    meaning: "Purity, mourning, and metal in the Five Elements.",
+    usage: "Enclosure walls, marble balustrades",
   },
 ];
 
@@ -158,13 +158,12 @@ const CulturePage = () => {
                 文化
               </span>
               <h1 className="font-serif text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
-                Culture & Héritage
+                Culture & Heritage
                 <br />
                 <span className="text-accent">Architectural</span>
               </h1>
               <p className="text-lg text-primary-foreground/80 leading-relaxed">
-                Explorez le symbolisme profond et la philosophie qui imprègnent
-                chaque aspect de l'architecture chinoise traditionnelle.
+                Explore the profound symbolism and philosophy embedded in every aspect of traditional Chinese architecture.
               </p>
             </motion.div>
           </div>
@@ -174,9 +173,9 @@ const CulturePage = () => {
         <section className="py-24 bg-background">
           <div className="container mx-auto px-4">
             <SectionTitle
-              chineseTitle="哲學"
-              title="Philosophie Architecturale"
-              subtitle="Les principes spirituels et cosmologiques qui guident la conception des bâtiments."
+              chineseTitle: "哲學",
+              title="Architectural Philosophy",
+              subtitle="The spiritual and cosmological principles guiding building design."
             />
 
             <div className="grid md:grid-cols-3 gap-8">
@@ -227,8 +226,8 @@ const CulturePage = () => {
           <div className="container mx-auto px-4">
             <SectionTitle
               chineseTitle="象徵"
-              title="Symbolisme Architectural"
-              subtitle="Les motifs et symboles qui ornent les bâtiments et leur signification profonde."
+              title="Architectural Symbolism",
+              subtitle="The motifs and symbols adorning buildings and their deep meanings."
             />
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -258,7 +257,7 @@ const CulturePage = () => {
                         {symbol.meaning}
                       </p>
                       <p className="text-xs text-accent">
-                        Usage : {symbol.usage}
+                        Usage: {symbol.usage}
                       </p>
                     </div>
                   </div>
@@ -273,8 +272,8 @@ const CulturePage = () => {
           <div className="container mx-auto px-4">
             <SectionTitle
               chineseTitle="顏色"
-              title="Couleurs Symboliques"
-              subtitle="Chaque couleur dans l'architecture chinoise porte une signification cosmologique et sociale."
+              title="Symbolic Colors",
+              subtitle="Every color in Chinese architecture carries cosmological and social significance."
             />
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -331,7 +330,7 @@ const CulturePage = () => {
                 transition={{ delay: 0.1 }}
                 className="font-serif text-3xl md:text-4xl font-semibold mb-6"
               >
-                Un Héritage Vivant
+                A Living Heritage
               </motion.h2>
 
               <motion.p
@@ -341,11 +340,7 @@ const CulturePage = () => {
                 transition={{ delay: 0.2 }}
                 className="text-secondary-foreground/80 leading-relaxed mb-8"
               >
-                L'architecture chinoise ancienne continue d'inspirer le monde
-                entier. Des techniques antisismiques du Dougong aux principes
-                d'harmonie du Feng Shui, cet héritage millénaire trouve des
-                applications dans l'architecture contemporaine durable et
-                respectueuse de l'environnement.
+                Ancient Chinese architecture continues to inspire the world. From the earthquake-resistant Dougong brackets to the harmony principles of Feng Shui, this millennia-old heritage finds new life in sustainable, environmentally conscious contemporary design.
               </motion.p>
 
               <motion.div
@@ -360,7 +355,7 @@ const CulturePage = () => {
                     55+
                   </span>
                   <span className="text-sm text-secondary-foreground/70">
-                    Sites UNESCO
+                    UNESCO Sites
                   </span>
                 </div>
                 <div>
@@ -368,7 +363,7 @@ const CulturePage = () => {
                     4000+
                   </span>
                   <span className="text-sm text-secondary-foreground/70">
-                    Années d'histoire
+                    Years of History
                   </span>
                 </div>
                 <div>
