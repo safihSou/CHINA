@@ -11,61 +11,61 @@ const books = [
     chineseTitle: "營造法式",
     author: "Li Jie (李誡)",
     year: "1103",
-    dynasty: "Song du Nord",
+    dynasty: "Northern Song",
     description:
-      "Le traité d'architecture le plus complet et influent de la Chine ancienne. Commandé par l'empereur et publié officiellement, il codifie tous les aspects de la construction impériale.",
+      "The most comprehensive and influential architectural treatise in ancient China. Commissioned by the emperor and officially published, it codified all aspects of imperial construction.",
     significance:
-      "Première standardisation complète des techniques de construction chinoises, incluant les proportions, matériaux et méthodes.",
+      "The first complete standardization of Chinese construction techniques, including proportions, materials, and methods.",
     contents: [
-      "Système modulaire cai-fen",
-      "Techniques Dougong détaillées",
-      "34 volumes illustrés",
-      "3555 illustrations techniques",
+      "Modular cai-fen system",
+      "Detailed Dougong techniques",
+      "34 illustrated volumes",
+      "3,555 technical illustrations",
     ],
     impact:
-      "Référence officielle pour toutes les constructions impériales pendant des siècles.",
+      "Official reference for all imperial construction projects for centuries.",
   },
   {
     title: "Lu Ban Jing",
     chineseTitle: "魯班經",
-    author: "Attribué à Lu Ban",
-    year: "XVe siècle",
+    author: "Attributed to Lu Ban",
+    year: "15th century",
     dynasty: "Ming",
     description:
-      "Manuel pratique de charpenterie traditionnelle, mêlant techniques de construction, rituels et géomancie. Destiné aux artisans et charpentiers de tous niveaux.",
+      "A practical manual of traditional carpentry, blending construction techniques, rituals, and geomancy. Intended for artisans and carpenters of all skill levels.",
     significance:
-      "Transmission du savoir-faire artisanal et des traditions spirituelles liées à la construction.",
+      "Preservation of artisanal craftsmanship and spiritual traditions associated with building.",
     contents: [
-      "Techniques de menuiserie",
-      "Rituels de construction",
-      "Calculs de Feng Shui",
-      "Fabrication de meubles",
+      "Woodworking techniques",
+      "Construction rituals",
+      "Feng Shui calculations",
+      "Furniture making",
     ],
     impact:
-      "Bible des charpentiers chinois, encore consultée par les artisans traditionnels.",
+      "The essential guide for Chinese carpenters—still consulted by traditional craftsmen today.",
   },
   {
     title: "Gongcheng Zuofa",
     chineseTitle: "工程做法",
-    author: "Bureau des Travaux Qing",
+    author: "Qing Ministry of Works",
     year: "1734",
     dynasty: "Qing",
     description:
-      "Règlement officiel des travaux publics de la dynastie Qing, établissant les normes de construction pour tous les bâtiments gouvernementaux et impériaux.",
+      "The official Qing dynasty regulation for public works, establishing construction standards for all government and imperial buildings.",
     significance:
-      "Adaptation des principes du Yingzao Fashi aux besoins et esthétiques de la dynastie Qing.",
+      "Adaptation of Yingzao Fashi principles to Qing-era needs and aesthetics.",
     contents: [
-      "27 règlements officiels",
-      "Standards de matériaux",
-      "Coûts et budgets",
-      "Procédures administratives",
+      "27 official regulations",
+      "Material standards",
+      "Cost estimates and budgets",
+      "Administrative procedures",
     ],
     impact:
-      "Gouverné la construction de tous les bâtiments officiels Qing, y compris les restaurations de la Cité Interdite.",
+      "Governed the construction of all Qing official buildings, including restorations of the Forbidden City.",
   },
 ];
 
-const LivresPage = () => {
+const BooksPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -84,13 +84,12 @@ const LivresPage = () => {
                 古書
               </span>
               <h1 className="font-serif text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
-                Livres d'Architecture
+                Ancient Architectural
                 <br />
-                <span className="text-accent">Anciens</span>
+                <span className="text-accent">Books</span>
               </h1>
               <p className="text-lg text-primary-foreground/80 leading-relaxed">
-                Les traités qui ont codifié le savoir architectural chinois,
-                transmettant les techniques des maîtres à travers les siècles.
+                The treatises that codified Chinese architectural knowledge, transmitting master builders’ techniques across centuries.
               </p>
             </motion.div>
           </div>
@@ -101,8 +100,8 @@ const LivresPage = () => {
           <div className="container mx-auto px-4">
             <SectionTitle
               chineseTitle="典籍"
-              title="Traités Fondamentaux"
-              subtitle="Les textes essentiels qui ont façonné l'architecture chinoise."
+              title="Foundational Treatises"
+              subtitle="The essential texts that shaped Chinese architecture."
             />
 
             <div className="space-y-16">
@@ -158,7 +157,7 @@ const LivresPage = () => {
                         <div>
                           <h4 className="font-serif font-semibold text-foreground mb-3 flex items-center gap-2">
                             <FileText className="w-4 h-4 text-primary" />
-                            Contenu Principal
+                            Key Contents
                           </h4>
                           <ul className="space-y-2">
                             {book.contents.map((item) => (
@@ -176,7 +175,7 @@ const LivresPage = () => {
                         <div>
                           <h4 className="font-serif font-semibold text-foreground mb-3 flex items-center gap-2">
                             <Star className="w-4 h-4 text-accent" />
-                            Importance Historique
+                            Historical Significance
                           </h4>
                           <p className="text-sm text-muted-foreground leading-relaxed">
                             {book.significance}
@@ -186,7 +185,7 @@ const LivresPage = () => {
 
                       <div className="p-4 bg-muted rounded-sm">
                         <p className="text-sm text-foreground">
-                          <span className="font-semibold">Impact durable : </span>
+                          <span className="font-semibold">Lasting Impact: </span>
                           {book.impact}
                         </p>
                       </div>
@@ -203,8 +202,8 @@ const LivresPage = () => {
           <div className="container mx-auto px-4">
             <SectionTitle
               chineseTitle="閱讀"
-              title="Manuscrits Numérisés"
-              subtitle="Explorez les pages originales de ces trésors historiques."
+              title="Digitized Manuscripts"
+              subtitle="Explore the original pages of these historical treasures."
             />
 
             <motion.div
@@ -216,7 +215,7 @@ const LivresPage = () => {
               <div className="aspect-[4/3] bg-muted rounded-sm overflow-hidden border border-border relative group">
                 <img
                   src={manuscriptImage}
-                  alt="Manuscrit ancien du Yingzao Fashi"
+                  alt="Ancient manuscript from Yingzao Fashi"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-transparent to-transparent flex items-end">
@@ -225,7 +224,7 @@ const LivresPage = () => {
                       Yingzao Fashi - 營造法式
                     </h4>
                     <p className="text-secondary-foreground/80 text-sm max-w-md">
-                      Pages originales du traité architectural de Li Jie, montrant les illustrations techniques détaillées des méthodes de construction.
+                      Original pages from Li Jie’s architectural treatise, showcasing detailed technical illustrations of construction methods.
                     </p>
                   </div>
                 </div>
@@ -239,4 +238,4 @@ const LivresPage = () => {
   );
 };
 
-export default LivresPage;
+export default BooksPage;
