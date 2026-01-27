@@ -6,37 +6,37 @@ import { SectionTitle } from "@/components/ui/SectionTitle";
 const categories = [
   {
     icon: Building2,
-    title: "Sciences Naturelles",
+    title: "Natural Sciences",
     chineseTitle: "科學",
     description:
-      "Systèmes antisismiques, ventilation naturelle et innovations structurelles qui défient le temps.",
+      "Anti-seismic systems, natural ventilation, and structural innovations that defy time.",
     path: "/sciences",
     color: "primary",
   },
   {
     icon: Users,
-    title: "Grands Architectes",
+    title: "Great Architects",
     chineseTitle: "建築師",
     description:
-      "Li Jie, Lei Fada, Kuai Xiang : les maîtres qui ont élevé l'architecture au rang d'art.",
+      "Li Jie, Lei Fada, Kuai Xiang: the masters who elevated architecture to an art form.",
     path: "/architectes",
     color: "secondary",
   },
   {
     icon: BookOpen,
-    title: "Livres Anciens",
+    title: "Ancient Books",
     chineseTitle: "古書",
     description:
-      "Yingzao Fashi, Lu Ban Jing : les traités qui codifient le savoir architectural.",
+      "Yingzao Fashi, Lu Ban Jing: the treatises that codify architectural knowledge.",
     path: "/livres",
     color: "accent",
   },
   {
     icon: Landmark,
-    title: "Culture & Héritage",
+    title: "Culture & Heritage",
     chineseTitle: "文化",
     description:
-      "Symbolisme, philosophie et transmission d'un patrimoine millénaire.",
+      "Symbolism, philosophy, and the transmission of a millennia-old heritage.",
     path: "/culture",
     color: "ink",
   },
@@ -48,8 +48,8 @@ export const IntroSection = () => {
       <div className="container mx-auto px-4">
         <SectionTitle
           chineseTitle="探索"
-          title="Explorez l'Architecture Chinoise"
-          subtitle="Quatre perspectives pour comprendre un patrimoine architectural unique au monde, fruit de millénaires d'innovation et de tradition."
+          title="Explore Chinese Architecture"
+          subtitle="Four perspectives to understand a unique architectural heritage, the fruit of millennia of innovation and tradition."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
