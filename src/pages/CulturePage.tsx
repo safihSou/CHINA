@@ -173,8 +173,8 @@ const CulturePage = () => {
         <section className="py-24 bg-background">
           <div className="container mx-auto px-4">
             <SectionTitle
-              chineseTitle: "哲學",
-              title="Architectural Philosophy",
+              chineseTitle="哲學"
+              title="Architectural Philosophy"
               subtitle="The spiritual and cosmological principles guiding building design."
             />
 
@@ -226,7 +226,7 @@ const CulturePage = () => {
           <div className="container mx-auto px-4">
             <SectionTitle
               chineseTitle="象徵"
-              title="Architectural Symbolism",
+              title="Architectural Symbolism"
               subtitle="The motifs and symbols adorning buildings and their deep meanings."
             />
 
