@@ -1,0 +1,245 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Chinese Architecture Museum Design System */
+
+@layer base {
+  :root {
+    /* Core Museum Palette */
+    --background: 48 100% 99%;
+    --foreground: 220 30% 10%;
+    
+    /* Ivory/Cream backgrounds */
+    --card: 45 50% 97%;
+    --card-foreground: 220 30% 10%;
+    
+    --popover: 45 50% 97%;
+    --popover-foreground: 220 30% 10%;
+    
+    /* Vermilion Red - Primary Chinese Color */
+    --primary: 352 76% 45%;
+    --primary-foreground: 48 100% 98%;
+    
+    /* Imperial Blue - Secondary */
+    --secondary: 220 58% 23%;
+    --secondary-foreground: 48 100% 98%;
+    
+    /* Muted tones */
+    --muted: 40 20% 92%;
+    --muted-foreground: 220 15% 40%;
+    
+    /* Gold Accent */
+    --accent: 43 74% 49%;
+    --accent-foreground: 220 30% 10%;
+    
+    /* Ink Black for emphasis */
+    --ink: 220 30% 8%;
+    --ink-foreground: 48 100% 98%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 40 30% 85%;
+    --input: 40 30% 85%;
+    --ring: 352 76% 45%;
+    
+    --radius: 0.25rem;
+    
+    /* Custom Gradients */
+    --gradient-vermilion: linear-gradient(135deg, hsl(352 76% 45%), hsl(352 70% 35%));
+    --gradient-imperial: linear-gradient(135deg, hsl(220 58% 23%), hsl(220 60% 15%));
+    --gradient-gold: linear-gradient(135deg, hsl(43 74% 49%), hsl(38 80% 40%));
+    --gradient-ivory: linear-gradient(180deg, hsl(48 100% 99%) 0%, hsl(45 50% 95%) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(220 30% 10% / 0.08);
+    --shadow-elevated: 0 12px 40px -8px hsl(220 30% 10% / 0.15);
+    --shadow-gold: 0 4px 20px -2px hsl(43 74% 49% / 0.3);
+    
+    /* Sidebar */
+    --sidebar-background: 45 50% 97%;
+    --sidebar-foreground: 220 30% 10%;
+    --sidebar-primary: 352 76% 45%;
+    --sidebar-primary-foreground: 48 100% 98%;
+    --sidebar-accent: 43 74% 49%;
+    --sidebar-accent-foreground: 220 30% 10%;
+    --sidebar-border: 40 30% 85%;
+    --sidebar-ring: 352 76% 45%;
+  }
+
+  .dark {
+    --background: 220 30% 8%;
+    --foreground: 45 30% 95%;
+    
+    --card: 220 28% 12%;
+    --card-foreground: 45 30% 95%;
+    
+    --popover: 220 28% 12%;
+    --popover-foreground: 45 30% 95%;
+    
+    --primary: 352 70% 55%;
+    --primary-foreground: 220 30% 8%;
+    
+    --secondary: 220 40% 35%;
+    --secondary-foreground: 45 30% 95%;
+    
+    --muted: 220 25% 18%;
+    --muted-foreground: 40 20% 65%;
+    
+    --accent: 43 70% 55%;
+    --accent-foreground: 220 30% 8%;
+    
+    --ink: 45 30% 95%;
+    --ink-foreground: 220 30% 8%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 220 25% 22%;
+    --input: 220 25% 22%;
+    --ring: 352 70% 55%;
+    
+    --sidebar-background: 220 28% 10%;
+    --sidebar-foreground: 45 30% 95%;
+    --sidebar-primary: 352 70% 55%;
+    --sidebar-primary-foreground: 220 30% 8%;
+    --sidebar-accent: 43 70% 55%;
+    --sidebar-accent-foreground: 220 30% 8%;
+    --sidebar-border: 220 25% 22%;
+    --sidebar-ring: 352 70% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', 'Noto Serif SC', serif;
+  }
+}
+
+@layer components {
+  /* Chinese Pattern Overlay */
+  .pattern-overlay {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C41E3A' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* Scroll Reveal Animation */
+  .reveal-on-scroll {
+    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+  }
+  
+  .reveal-on-scroll.revealed {
+    @apply opacity-100 translate-y-0;
+  }
+
+  /* Gold Border Accent */
+  .gold-border {
+    @apply border-2;
+    border-color: hsl(var(--accent));
+  }
+  
+  /* Vermilion Underline */
+  .vermilion-underline {
+    @apply relative;
+  }
+  
+  .vermilion-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-primary transform scale-x-0 origin-left transition-transform duration-300;
+  }
+  
+  .vermilion-underline:hover::after {
+    @apply scale-x-100;
+  }
+
+  /* Museum Card Style */
+  .museum-card {
+    @apply bg-card border border-border rounded-sm shadow-sm transition-all duration-300;
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .museum-card:hover {
+    box-shadow: var(--shadow-elevated);
+    @apply -translate-y-1;
+  }
+
+  /* Section Divider */
+  .section-divider {
+    @apply w-24 h-px bg-gradient-to-r from-transparent via-primary to-transparent mx-auto;
+  }
+
+  /* Chinese Frame */
+  .chinese-frame {
+    @apply relative p-8;
+  }
+  
+  .chinese-frame::before {
+    content: '';
+    @apply absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2;
+    border-color: hsl(var(--accent));
+  }
+  
+  .chinese-frame::after {
+    content: '';
+    @apply absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2;
+    border-color: hsl(var(--accent));
+  }
+
+  /* Timeline styles */
+  .timeline-dot {
+    @apply w-4 h-4 rounded-full bg-primary border-4 border-background shadow-md;
+  }
+
+  /* Interactive Map Placeholder */
+  .map-placeholder {
+    @apply relative overflow-hidden rounded-sm;
+    background: linear-gradient(135deg, hsl(var(--muted)) 0%, hsl(var(--card)) 100%);
+  }
+}
+
+@layer utilities {
+  /* Text gradients */
+  .text-gradient-vermilion {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-vermilion);
+  }
+  
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-gold);
+  }
+
+  /* Background utilities */
+  .bg-gradient-vermilion {
+    background: var(--gradient-vermilion);
+  }
+  
+  .bg-gradient-imperial {
+    background: var(--gradient-imperial);
+  }
+  
+  .bg-gradient-ivory {
+    background: var(--gradient-ivory);
+  }
+
+  /* Animation delays */
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
+
+  /* Smooth scrolling */
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+}
