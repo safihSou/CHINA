@@ -11,7 +11,7 @@ export const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Cité Interdite - Architecture impériale chinoise"
+          alt="Forbidden City - Imperial Chinese Architecture"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-secondary/80 via-secondary/60 to-secondary/90" />
@@ -56,9 +56,9 @@ export const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight"
         >
-          Les Grandes Réalisations
+          The Great Architectural
           <br />
-          <span className="text-accent">Architecturales</span>
+          <span className="text-accent">Achievements</span>
         </motion.h1>
 
         <motion.p
@@ -67,9 +67,9 @@ export const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Découvrez l'héritage architectural de la Chine ancienne, des prouesses
-          scientifiques aux traités millénaires, en passant par les maîtres
-          bâtisseurs qui ont façonné l'Empire du Milieu.
+          Discover the architectural heritage of ancient China, from scientific
+          feats to millennia-old treatises, and the master builders who shaped
+          the Middle Kingdom.
         </motion.p>
 
         <motion.div
@@ -83,7 +83,7 @@ export const HeroSection = () => {
             size="lg"
             className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-base font-medium"
           >
-            <Link to="/sciences">Commencer l'Exploration</Link>
+            <Link to="/sciences">Begin Exploration</Link>
           </Button>
           <Button
             asChild
@@ -91,7 +91,7 @@ export const HeroSection = () => {
             size="lg"
             className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 px-8 py-6 text-base"
           >
-            <Link to="/culture">Découvrir la Culture</Link>
+            <Link to="/culture">Discover Culture</Link>
           </Button>
         </motion.div>
 
@@ -108,7 +108,7 @@ export const HeroSection = () => {
             className="flex flex-col items-center gap-2"
           >
             <span className="text-xs text-primary-foreground/60 uppercase tracking-widest">
-              Défiler
+              Scroll
             </span>
             <ChevronDown className="w-5 h-5 text-primary-foreground/60" />
           </motion.div>
