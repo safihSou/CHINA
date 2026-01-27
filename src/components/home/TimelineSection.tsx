@@ -5,44 +5,44 @@ const timelineEvents = [
   {
     year: "-221",
     era: "Qin",
-    title: "Grande Muraille",
+    title: "Great Wall",
     description:
-      "Unification et début de la construction de la Grande Muraille sous Qin Shi Huang.",
+      "Unification and beginning of the Great Wall construction under Qin Shi Huang.",
   },
   {
     year: "607",
     era: "Sui",
     title: "Grand Canal",
     description:
-      "Achèvement du Grand Canal, prouesse d'ingénierie hydraulique reliant le nord et le sud.",
+      "Completion of the Grand Canal, a hydraulic engineering feat connecting north and south.",
   },
   {
     year: "1103",
     era: "Song",
     title: "Yingzao Fashi",
     description:
-      "Publication du traité d'architecture de Li Jie, codifiant les standards de construction.",
+      "Publication of Li Jie's architectural treatise, codifying construction standards.",
   },
   {
     year: "1406",
     era: "Ming",
-    title: "Cité Interdite",
+    title: "Forbidden City",
     description:
-      "Début de la construction de la Cité Interdite à Beijing sous l'empereur Yongle.",
+      "Beginning of the construction of the Forbidden City in Beijing under Emperor Yongle.",
   },
   {
     year: "1420",
     era: "Ming",
-    title: "Temple du Ciel",
+    title: "Temple of Heaven",
     description:
-      "Achèvement du Temple du Ciel, chef-d'œuvre de symbolisme cosmologique.",
+      "Completion of the Temple of Heaven, a masterpiece of cosmological symbolism.",
   },
   {
     year: "1703",
     era: "Qing",
-    title: "Palais d'Été",
+    title: "Summer Palace",
     description:
-      "Construction du Jardin de la Clarté Parfaite, apogée de l'art des jardins.",
+      "Construction of the Garden of Perfect Brightness, the pinnacle of garden art.",
   },
 ];
 
@@ -52,8 +52,8 @@ export const TimelineSection = () => {
       <div className="container mx-auto px-4">
         <SectionTitle
           chineseTitle="時間"
-          title="Chronologie Architecturale"
-          subtitle="Les moments clés qui ont façonné l'architecture chinoise à travers les dynasties."
+          title="Architectural Timeline"
+          subtitle="Key moments that shaped Chinese architecture throughout the dynasties."
         />
 
         <div className="relative max-w-4xl mx-auto">
@@ -82,7 +82,7 @@ export const TimelineSection = () => {
                     </span>
                     <span className="font-serif text-lg font-semibold text-accent">
                       {event.year.startsWith("-")
-                        ? `${event.year.slice(1)} av. J.-C.`
+                        ? `${event.year.slice(1)} BC`
                         : event.year}
                     </span>
                   </div>
