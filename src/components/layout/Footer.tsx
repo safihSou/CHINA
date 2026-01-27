@@ -15,24 +15,24 @@ export const Footer = () => {
               </div>
               <div>
                 <h3 className="font-serif text-lg font-semibold">
-                  Architecture Chinoise Ancienne
+                  Ancient Chinese Architecture
                 </h3>
                 <p className="text-xs text-secondary-foreground/70">
-                  Les Grandes Réalisations
+                  The Great Achievements
                 </p>
               </div>
             </div>
             <p className="text-sm text-secondary-foreground/80 max-w-md leading-relaxed">
-              Un voyage éducatif à travers les merveilles architecturales de la
-              Chine ancienne, explorant les sciences, les architectes, les textes
-              historiques et l'héritage culturel.
+              An educational journey through the architectural wonders of
+              ancient China, exploring the sciences, architects, historical
+              texts, and cultural heritage.
             </p>
           </div>
 
           {/* Navigation */}
           <div>
             <h4 className="font-serif text-sm font-semibold mb-4 text-accent">
-              Explorer
+              Explore
             </h4>
             <ul className="space-y-2">
               <li>
@@ -40,7 +40,7 @@ export const Footer = () => {
                   to="/sciences"
                   className="text-sm text-secondary-foreground/70 hover:text-secondary-foreground transition-colors"
                 >
-                  Sciences Naturelles
+                  Natural Sciences
                 </Link>
               </li>
               <li>
@@ -48,7 +48,7 @@ export const Footer = () => {
                   to="/architectes"
                   className="text-sm text-secondary-foreground/70 hover:text-secondary-foreground transition-colors"
                 >
-                  Grands Architectes
+                  Great Architects
                 </Link>
               </li>
               <li>
@@ -56,7 +56,7 @@ export const Footer = () => {
                   to="/livres"
                   className="text-sm text-secondary-foreground/70 hover:text-secondary-foreground transition-colors"
                 >
-                  Livres Anciens
+                  Ancient Books
                 </Link>
               </li>
               <li>
@@ -64,7 +64,7 @@ export const Footer = () => {
                   to="/culture"
                   className="text-sm text-secondary-foreground/70 hover:text-secondary-foreground transition-colors"
                 >
-                  Culture & Héritage
+                  Culture & Heritage
                 </Link>
               </li>
             </ul>
@@ -73,27 +73,27 @@ export const Footer = () => {
           {/* Resources */}
           <div>
             <h4 className="font-serif text-sm font-semibold mb-4 text-accent">
-              Ressources
+              Resources
             </h4>
             <ul className="space-y-2">
               <li>
                 <span className="text-sm text-secondary-foreground/70">
-                  Bibliographie
+                  Bibliography
                 </span>
               </li>
               <li>
                 <span className="text-sm text-secondary-foreground/70">
-                  Chronologie
+                  Timeline
                 </span>
               </li>
               <li>
                 <span className="text-sm text-secondary-foreground/70">
-                  Carte Interactive
+                  Interactive Map
                 </span>
               </li>
               <li>
                 <span className="text-sm text-secondary-foreground/70">
-                  Glossaire
+                  Glossary
                 </span>
               </li>
             </ul>
@@ -104,7 +104,7 @@ export const Footer = () => {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-secondary-foreground/60">
           <p>
-            © 2024 Concours Architecture Chinoise. Projet éducatif.
+            © 2024 Chinese Architecture Competition. Educational project.
           </p>
           <p className="font-chinese">
             中国古代建筑艺术
