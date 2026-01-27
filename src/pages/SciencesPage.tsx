@@ -8,74 +8,74 @@ import dougongImage from "@/assets/dougong-system.jpg";
 const innovations = [
   {
     icon: Shield,
-    title: "Système Dougong",
+    title: "Dougong System",
     chineseTitle: "斗拱",
     description:
-      "Assemblage de consoles en bois sans clous ni vis, permettant une flexibilité structurelle unique. Ce système absorbe les chocs sismiques et distribue le poids de la toiture.",
+      "An interlocking wooden bracket system assembled without nails or screws, providing unique structural flexibility. It absorbs seismic shocks and distributes roof weight efficiently.",
     details: [
-      "Résistance aux tremblements de terre",
-      "Distribution optimale des charges",
-      "Assemblage sans métal",
+      "Earthquake resistance",
+      "Optimal load distribution",
+      "Metal-free assembly",
     ],
   },
   {
     icon: Wind,
-    title: "Ventilation Naturelle",
+    title: "Natural Ventilation",
     chineseTitle: "通風",
     description:
-      "Les bâtiments traditionnels utilisent des cours intérieures et des orientations précises pour créer une circulation d'air naturelle, régulant la température sans énergie externe.",
+      "Traditional buildings use interior courtyards and precise orientations to create natural airflow, regulating indoor temperature without external energy.",
     details: [
-      "Cours intérieures (Siheyuan)",
-      "Orientation sud optimale",
-      "Toits en pente pour évacuation thermique",
+      "Interior courtyards (Siheyuan)",
+      "Optimal south-facing orientation",
+      "Sloped roofs for thermal regulation",
     ],
   },
   {
     icon: Cog,
-    title: "Techniques Antisismiques",
+    title: "Seismic-Resistant Techniques",
     chineseTitle: "抗震",
     description:
-      "Les pagodes et temples utilisent des colonnes centrales flottantes et des fondations flexibles permettant aux structures de résister à des siècles de séismes.",
+      "Pagodas and temples employ floating central columns and flexible foundations, enabling structures to withstand centuries of earthquakes.",
     details: [
-      "Colonnes centrales suspendues",
-      "Fondations en pierre sans mortier",
-      "Joints flexibles en bois",
+      "Suspended central columns",
+      "Mortarless stone foundations",
+      "Flexible wooden joints",
     ],
   },
   {
     icon: Layers,
-    title: "Architecture Modulaire",
+    title: "Modular Architecture",
     chineseTitle: "模組",
     description:
-      "Un système de modules standardisés (cai-fen) permettait de construire des bâtiments de toute taille en maintenant des proportions harmonieuses.",
+      "A standardized modular system (cai-fen) allowed buildings of any scale to be constructed while maintaining harmonious proportions.",
     details: [
-      "Unité de mesure cai",
-      "Proportions codifiées",
-      "Scalabilité parfaite",
+      "Cai as the base unit of measurement",
+      "Codified proportional ratios",
+      "Perfect scalability",
     ],
   },
   {
     icon: Ruler,
-    title: "Géométrie Sacrée",
+    title: "Sacred Geometry",
     chineseTitle: "幾何",
     description:
-      "Les dimensions des bâtiments impériaux suivent des ratios mathématiques précis liés au Feng Shui et à la cosmologie chinoise.",
+      "Imperial building dimensions follow precise mathematical ratios derived from Feng Shui and Chinese cosmology.",
     details: [
-      "Nombres yin et yang",
-      "Carré magique Lo Shu",
-      "Axe nord-sud sacré",
+      "Yin and Yang numbers",
+      "Lo Shu magic square",
+      "Sacred north-south axis",
     ],
   },
   {
     icon: Compass,
-    title: "Orientation Feng Shui",
+    title: "Feng Shui Orientation",
     chineseTitle: "風水",
     description:
-      "Chaque bâtiment est orienté selon les principes du Feng Shui pour harmoniser l'énergie (Qi) entre l'homme et son environnement.",
+      "Every building is oriented according to Feng Shui principles to harmonize the flow of energy (Qi) between humans and their environment.",
     details: [
-      "Boussole Luopan",
-      "Protection des montagnes au nord",
-      "Eau au sud pour la prospérité",
+      "Luopan compass",
+      "Protective mountains to the north",
+      "Water to the south for prosperity",
     ],
   },
 ];
@@ -99,15 +99,12 @@ const SciencesPage = () => {
                 科學
               </span>
               <h1 className="font-serif text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
-                Sciences Naturelles
+                Natural Sciences
                 <br />
                 <span className="text-accent">& Innovations</span>
               </h1>
               <p className="text-lg text-primary-foreground/80 leading-relaxed">
-                L'architecture chinoise ancienne représente une fusion
-                remarquable entre science, art et philosophie. Découvrez les
-                innovations techniques qui ont permis à ces structures de
-                traverser les millénaires.
+                Ancient Chinese architecture represents a remarkable fusion of science, art, and philosophy. Discover the technical innovations that enabled these structures to endure for millennia.
               </p>
             </motion.div>
           </div>
@@ -118,8 +115,8 @@ const SciencesPage = () => {
           <div className="container mx-auto px-4">
             <SectionTitle
               chineseTitle="創新"
-              title="Innovations Techniques"
-              subtitle="Des prouesses d'ingénierie qui continuent d'inspirer l'architecture moderne."
+              title="Technical Innovations"
+              subtitle="Engineering marvels that continue to inspire modern architecture."
             />
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -170,8 +167,8 @@ const SciencesPage = () => {
           <div className="container mx-auto px-4">
             <SectionTitle
               chineseTitle="模型"
-              title="Modèle 3D Interactif"
-              subtitle="Explorez la structure du système Dougong en trois dimensions."
+              title="Interactive 3D Model",
+              subtitle="Explore the Dougong bracket system in three dimensions."
             />
 
             <motion.div
@@ -183,21 +180,21 @@ const SciencesPage = () => {
               <div className="aspect-video bg-muted rounded-sm overflow-hidden border border-border relative group">
                 <img
                   src={dougongImage}
-                  alt="Système Dougong - Assemblage de consoles en bois"
+                  alt="Dougong System – Interlocking wooden brackets"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
                   <div className="p-6">
                     <h4 className="font-serif text-xl font-semibold text-secondary-foreground mb-2">
-                      Système Dougong
+                      Dougong System
                     </h4>
                     <p className="text-secondary-foreground/80 text-sm max-w-md">
-                      Assemblage de consoles en bois sans clous, permettant une flexibilité structurelle unique et une résistance aux séismes.
+                      An interlocking wooden bracket system assembled without nails, offering unique structural flexibility and earthquake resistance.
                     </p>
                   </div>
                 </div>
                 <div className="absolute top-4 right-4 px-3 py-1 bg-background/90 backdrop-blur-sm rounded-sm text-xs font-medium text-foreground">
-                  Espace 3D interactif
+                  Interactive 3D Space
                 </div>
               </div>
             </motion.div>
