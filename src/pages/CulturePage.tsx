@@ -272,7 +272,7 @@ const CulturePage = () => {
           <div className="container mx-auto px-4">
             <SectionTitle
               chineseTitle="顏色"
-              title="Symbolic Colors",
+              title="Symbolic Colors"
               subtitle="Every color in Chinese architecture carries cosmological and social significance."
             />
 
